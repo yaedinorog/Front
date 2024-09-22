@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Разработка</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div>
+            <img src="logo.png" alt="Тут должно быть лого">
+            <div>Logo</div>
+            </div>
+        <div>
+            <div>Группа ЭФБО-10-23</div>
+            <div>Рудаков Ярослав Павлович</div>
+        </div>
+    </header>
+
+    <nav>
+        <a href="/index.html">Главная</a>
+        <a href="">Первый семестр</a>
+        <a href="">Второй семестр</a>
+        <a href="#">Услуги</a>
+        <a href="">Авторизация</a>
+    </nav>
+
+    <article>
+        <h1>Разработка веб-приложений</h1>
+        <div>
+            <img src="site-1.png" alt="Первый сайт">
+            <p>Сайт-визитка</p>
+            <button class="openModal" id="openModal" name="site-1">Заказать</button>
+        </div>
+        <div>
+            <img src="site-2.png" alt="Второй сайт">
+            <p>Корпоративный сайт</p>
+            <button class="openModal" name="site-2">Заказать</button>
+        </div>
+        <div>
+            <img src="site-3.png" alt="Третий сайт">
+            <p>Интернет-магазин</p>
+            <button class="openModal" name="site-3">Заказать</button>
+        </div>
+        <p>
+            Еще больше букв вообще непонятно про что но про что то наверное очень важное
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, qui nemo provident sequi laboriosam 
+            reiciendis dolorem animi ad pariatur libero enim, minus nobis tenetur at dolor vero iste minima exercitationem!
+        </p>
+    </article>
+
+    <div class="modal" id="modal">
+        <div class="close">X</div><!--это крестик для закрытия формы-->
+        <form id="contactForm" class="contactForm modal-content" action="main.py" method="post" enctype="text/plain">
+            <!-- Поле для ввода имени -->
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" placeholder="Иванов" required>
+
+            <!-- Поле для ввода электронной почты -->
+            <label for="email">Электронная почта:</label>
+            <input type="email" id="email" name="email" placeholder="ivanov.i.i@roskomnadzor.com" required>
+
+            <label for="phone">Телефон:</label>
+            <input type="number" id="phone" name="phone" placeholder="+78005553535" required>
+
+            <label for="country">Страна:</label>
+            <select name="country" id="country" size="1" required>
+                <option value="s1">РОССИЯ</option>
+                <option value="s2">Франция</option>
+                <option value="s3">Испания</option>
+                <option value="s4">США</option>
+            </select>
+
+            <label for="date">Дата:</label>
+            <input type="date" id="date" required>
+
+            <!-- Многострочное текстовое поле для комментариев -->
+            <label for="comments">Комментарии:</label>
+            <textarea id="comments" name="comments"></textarea>
+
+            <input type="checkbox" id="obrabotka_dannih" required>
+            <label for="obrabotka_dannih">Соглашаюсь на обработку персональных данных</label>
+
+            <input type="hidden">
+
+            <!-- Кнопка отправки формы -->
+            <button type="submit" id="submit_form">Отправить</button>
+        </form>
+    </div>
+
+    <footer>
+        <div>&copy; Рудаков Ярослав Павлович, 2024</div>
+        <img src="wasssup.png" alt="Значок вотсап">
+        <img src="vk.png" alt="Значок вк">
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
