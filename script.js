@@ -9,7 +9,7 @@ const btn2 = document.getElementById("submit_form");
 
 // Открываем модальное окно при нажатии на кнопку
 btn.onclick = function() {
-    modal.style.display = "block";
+    modal.style.display = "inline";
 }
 
 // Закрываем модальное окно при нажатии на "X"

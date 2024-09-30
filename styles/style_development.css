@@ -1,0 +1,98 @@
+/* Стили для модального окна */
+.modal {
+    display: none; /* Скрываем модальное окно по умолчанию */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.349); /* Черный фон */
+}
+
+.modal-content {
+    color: #4e3943;
+    display: flex;
+    flex-direction: column;;
+    background-color: #fefefe;
+    margin: 15% auto; /* Центрируем модальное окно */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%; /* Ширина модального окна */
+}
+
+.close {
+    color: #aaa; /* Цвет кнопки закрытия */
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@font-face {
+    font-family: "NunitoRegular";
+    src: url("./fonts/Nunito-Regular.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+
+body {
+    background-color: #4C179D;
+    color: #DEC1CE;
+    font-family: "NunitoRegular";
+}
+
+a {
+    color: #DEC1CE;
+}
+
+a:visited {
+    color: #9b739e;
+}
+
+a:hover {
+    color:#ad8f9d;
+}
+
+.image {
+    width: 100px;
+    height: 100px;
+}
+
+.products {
+    display: flex;
+}
+
+.products div {
+    padding: 10px 100px;
+}
+
+.textarea {
+    min-width: 380px;
+    max-width: 380px;
+    max-height: 100px;
+    min-height: 100px;
+}
+
+.checkbox {
+    display: flex;
+}
+
+.footer {
+    display: flex;
+}
+
+.footer-right {
+    margin-left: 80%;
+}
+
+.article {
+    margin: 10px 70px;
+}

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Разработка</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/style_development.css">
 </head>
 <body>
     <header>
@@ -26,24 +26,26 @@
         <a href="">Авторизация</a>
     </nav>
 
-    <article>
+    <article class="main">
         <h1>Разработка веб-приложений</h1>
-        <div>
-            <img src="site-1.png" alt="Первый сайт">
-            <p>Сайт-визитка</p>
-            <button class="openModal" id="openModal" name="site-1">Заказать</button>
+        <div class="products">
+            <div>
+                <img src="images/site-1.png" alt="Первый сайт" class="image">
+                <p>Сайт-визитка</p>
+                <button class="openModal" id="openModal" name="site-1">Заказать</button>
+            </div>
+            <div>
+                <img src="images/site-2.png" alt="Второй сайт" class="image">
+                <p>Корпоративный сайт</p>
+                <button class="openModal" name="site-2">Заказать</button>
+            </div>
+            <div>
+                <img src="images/site-3.png" alt="Третий сайт" class="image">
+                <p>Интернет-магазин</p>
+                <button class="openModal" name="site-3">Заказать</button>
+            </div>
         </div>
-        <div>
-            <img src="site-2.png" alt="Второй сайт">
-            <p>Корпоративный сайт</p>
-            <button class="openModal" name="site-2">Заказать</button>
-        </div>
-        <div>
-            <img src="site-3.png" alt="Третий сайт">
-            <p>Интернет-магазин</p>
-            <button class="openModal" name="site-3">Заказать</button>
-        </div>
-        <p>
+        <p class="article">
             Еще больше букв вообще непонятно про что но про что то наверное очень важное
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, qui nemo provident sequi laboriosam 
             reiciendis dolorem animi ad pariatur libero enim, minus nobis tenetur at dolor vero iste minima exercitationem!
@@ -54,8 +56,8 @@
         <div class="close">X</div><!--это крестик для закрытия формы-->
         <form id="contactForm" class="contactForm modal-content" action="main.py" method="post" enctype="text/plain">
             <!-- Поле для ввода имени -->
-            <label for="name">Имя:</label>
-            <input type="text" id="name" name="name" placeholder="Иванов" required>
+            <label for="name">ФИО:</label>
+            <input type="text" id="name" name="name" placeholder="Иванов Иван Иванович" required>
 
             <!-- Поле для ввода электронной почты -->
             <label for="email">Электронная почта:</label>
@@ -77,11 +79,12 @@
 
             <!-- Многострочное текстовое поле для комментариев -->
             <label for="comments">Комментарии:</label>
-            <textarea id="comments" name="comments"></textarea>
+            <textarea id="comments" name="comments" class="textarea"></textarea>
 
-            <input type="checkbox" id="obrabotka_dannih" required>
-            <label for="obrabotka_dannih">Соглашаюсь на обработку персональных данных</label>
-
+            <div class="checkbox">
+                <input type="checkbox" id="obrabotka_dannih" required>
+                <label for="obrabotka_dannih">Соглашаюсь на обработку персональных данных</label>
+            </div>
             <input type="hidden">
 
             <!-- Кнопка отправки формы -->
@@ -89,10 +92,12 @@
         </form>
     </div>
 
-    <footer>
+    <footer class="footer">
         <div>&copy; Рудаков Ярослав Павлович, 2024</div>
-        <img src="wasssup.png" alt="Значок вотсап">
-        <img src="vk.png" alt="Значок вк">
+        <div class="footer-right">
+            <img src="wasssup.png" alt="Значок вотсап">
+            <img src="vk.png" alt="Значок вк">
+        </div>
     </footer>
 
     <script src="script.js"></script>

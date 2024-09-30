@@ -1,0 +1,50 @@
+@font-face {
+    font-family: "NunitoRegular";
+    src: url("./fonts/Nunito-Regular.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+
+body {
+    background-color: #4C179D;
+    color: #DEC1CE;
+    font-family: "NunitoRegular";
+}
+
+a {
+    color: #DEC1CE;
+}
+
+a:visited {
+    color: #9b739e;
+}
+
+a:hover {
+    color:#ad8f9d;
+}
+
+.header {
+    display: flex;
+}
+
+.header_right {
+    margin-left: 80%;
+}
+
+.main {
+    display: flex;
+}
+
+.aside {
+    width: 250px;
+}
+
+.aside a {
+    display: block;
+}
+
+.iobject {
+    width: 50%;
+    height: 500px;
+    margin-left: 250px;
+}
